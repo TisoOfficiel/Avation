@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Avation</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="horizontal-navbar">
+                <p>Home</p>
+                <p>Robotics</p>
+                <p class="activate">Avation</p>
+                <p>Services</p>
+                <p>About</p>
+            </div>
+        </nav>
+        <i class="menu-icon material-icons" onclick="active_menu()"> menu</i>
+    </header>
+    <main>
+        <img class="robot-background" src="assets/Bitmap.png" alt="Robot armor">
+        <div class="description-container">
+            <h1>GENX II</h1>
+            <p>Robot is a new kind of on-demand infrastructure: autonomous platforms will combine together to form floating bridges and stages, collect waste, deliver goods, and transport people and more.</p>
+            <div class="button"><p>Read more</p></div>
+        </div>
+
+        <div class="card-info-container">
+            <div class="card-header-container">
+                <img src="assets/Bitmap-2.png" alt="robot humanoide picture">
+                <h2 class="robot-name">Orbitter X</h2>
+            </div>
+
+            <p>Several robots have been made which can walk reliably on two legs, however none have yet been made which are as robust as a human.</p>
+
+            
+            <div class="paginate">
+                <p>Previous</p>
+                <p>Next</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+
+        function active_menu(){
+            var menu = document.getElementById("nav")
+            console.log(menu)
+            menu.classList.toggle("visible")
+            
+
+        }
+    </script>
+</body>
+</html>

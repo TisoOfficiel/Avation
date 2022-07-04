@@ -1,0 +1,282 @@
+body{
+    background:#0D0D0F;
+    margin: 0;
+}
+header{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 230px;
+    background: linear-gradient(180deg, #0D0D0F 0%, rgba(13, 13, 15, 0) 100%);;
+}
+.menu-icon{
+    visibility: hidden;
+     color: white;
+    font-size: 48px!important;
+}
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 711px;
+ 
+}
+
+.horizontal-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav p{
+    clip-path: polygon(13% 0, 100% 0, 100% 75%, 87% 100%, 0 100%, 0 25%);
+    padding: 5px;
+}
+nav p:hover{
+    opacity: 1;
+    cursor: pointer;
+    background: #FFD6AA;
+    color: #0D0D0F;
+    transition: 0.2s;
+}
+    h1{
+        margin: 0;
+        padding: 0;
+    }
+.activate{
+
+color: black;
+padding: 10px;
+font-family: 'Futura';
+font-style: normal;
+font-weight: 500;
+font-size: 37px;
+line-height: 49px;
+color: #FFFFFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p{
+
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 23px;
+text-align: center;
+color: #FFFFFF;
+
+}
+main{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.robot-background{
+    float: right;
+    height: 99vh;    
+    clip-path: polygon(2% 0, 100% 0%, 100% 100%, 2% 100%);
+}
+
+.description-container{
+    position: absolute;
+    left: 4%;
+    top:20%;
+    height: 81px;
+    width: 491px;
+}
+
+.description-container >h1{
+    font-family: 'Iceberg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 85px;
+
+    background: linear-gradient(175.79deg, #FFD6AA 20.9%, rgba(255, 132, 0, 0) 96.57%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description-container>p, .button{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.button{
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom left, white, rgb(56, 56, 56)) 1;
+    backdrop-filter: blur(40px);
+    box-sizing: border-box;
+    width: 176px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: white;
+    transition: 0.2s;
+}
+
+.button:hover > p{
+    color: black;
+    transition: 0.2s;
+}
+.card-info-container{
+    width: 785px;
+    height:314px;
+    position: absolute;
+    bottom: 0;
+    left: 4%;
+    display: flex;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    backdrop-filter: blur(40px);
+    border-image: linear-gradient(to bottom left, white, rgb(56, 56, 56)) 1;
+}
+
+
+.card-header-container >img{
+    position: absolute;
+    left: 60px;
+    top: -12%;
+}
+.robot-name{
+    position: absolute;
+    left: 300px;
+    top: 12%;
+    font-family: 'Iceberg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+
+.card-info-container p{
+    font-family: 'Gilroy';
+    position: absolute;
+    left: 60px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: start;
+    margin-top: 80px;
+    width: 75%;
+
+}
+
+.paginate{
+    position: absolute;
+    bottom :0;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.paginate p{
+    margin-bottom: 40px;
+    position: relative;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+/* identical to box height, or 150% */
+
+color: #FFFFFF;
+
+
+}
+.paginate p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.paginate p:first-child{
+    opacity: 0.4;
+}
+
+.visible{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.2s;
+}
+@media only screen and (max-width: 1200px) {
+    .robot-background{
+            position: relative;
+            left: 30%;
+        }
+
+}
+@media only screen and (max-width: 992px) {
+
+        .robot-background{
+            position: relative;
+            left: 120%;
+        }
+        .card-info-container{
+            width: 80%;
+        }
+    
+
+}
+
+@media only screen and (max-width: 600px) {
+    .robot-background{
+            position: relative;
+            left: 140%;
+    }
+
+    .description-container{
+            width: 90%;
+            
+        }
+    .description-container >p{
+        font-weight: bold;
+        color: rgb(217, 217, 217);
+        text-shadow: 1px 1px 1px black;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        left: 2%;
+        top: 15px;
+        visibility: visible;
+    }
+    nav{
+        width: 100%;
+        background: rgba(0, 0, 0, 0.923);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s;
+    }
+    header{
+        width: 80%;
+        height: 100%;
+        background: none;
+    }
+    .horizontal-navbar{
+        flex-direction: column;
+        justify-content: start;
+    }
+}
